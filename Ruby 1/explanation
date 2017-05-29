@@ -1,0 +1,26 @@
+Variables
+
+To store a number or a string in your computer's memory for use later in your program, you need to give the number or string a name. Programmers often refer to this process as assignment and they call the names variables. A variable springs into existence as soon as the interpreter sees an assignment to that variable.
+
+    s = 'Hello World!'  
+    x = 10  
+
+Methods
+
+A method is a series of statements that perform an operation or a series of operations (like calculate a value, sort a series of values, or some other task), and then return a value.
+
+Method names should begin with a lowercase letter. If you begin a method name with an uppercase letter, Ruby might think that it is a constant and hence can parse the call incorrectly.
+
+def method_name [( [arg [= default]]...[, * arg [, &expr ]])]
+   expr..
+end
+
+Arguments
+When we pass data some information to method, that information is called a parameter.
+
+def greeting(name)
+  p "hello" + " " + name
+end
+
+3)
+ "2" + "2" not give us 4 because  "2" + "2" is string
