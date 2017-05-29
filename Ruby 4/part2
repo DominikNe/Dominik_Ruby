@@ -1,0 +1,25 @@
+Class Variables
+
+Class variables are easy. Simply create your new class, use the @@ to denote the variable as class level and add a getter method like so:
+
+class Polygon
+  @@sides = 10
+  def self.sides
+    @@sides
+  end
+end
+
+puts Polygon.sides # => 10
+
+Instance Variables
+
+Objects can have class and instance variables. This means that a class can have instance variables. Let’s reopen our Polygon class and add an instance variable:
+
+class Polygon
+  @sides = 10
+end
+
+Now, you can use some reflection to check out Polygon’s class and instance variables:
+
+puts Polygon.class_variables # => @@sides
+puts Polygon.instance_variables # => @sides
