@@ -1,0 +1,1 @@
+What we generally call a class method is a method that resides at the class level. On the opposite, an instance method is a method that resides at the object level. In ruby, classes are also objects, so the methods you define as class methods only exist in the object that defined them (the class) and nowhere else

@@ -1,0 +1,25 @@
+Inheritance is when a class inherits behavior from another class. The class that is inheriting behavior is called the subclass and the class it inherits from is called the superclass.
+
+We use inheritance as a way to extract common behaviors from classes that share that behavior, and move it to a superclass. This lets us keep logic in one place. Let's take a look at an example.
+Class Inheritance
+
+Here, we're extracting the speak method to a superclass Animal, and we use inheritance to make that behavior available to GoodDog and Cat classes.
+
+# good_dog_class.rb
+
+class Animal
+  def speak
+    "Hello!"
+  end
+end
+
+class GoodDog < Animal
+end
+
+class Cat < Animal
+end
+
+sparky = GoodDog.new
+paws = Cat.new
+puts sparky.speak           # => Hello!
+puts paws.speak             # => Hello!

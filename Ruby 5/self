@@ -1,0 +1,1 @@
+ In instance methods (the only kind we’ve written so far), self refers to the instance of the class that the method is getting called on: the particular object. So, when you call your new method on a string, self refers to that string.
