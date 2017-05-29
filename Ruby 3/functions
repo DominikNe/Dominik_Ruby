@@ -1,0 +1,42 @@
+Fetch
+
+If a block is given it will only be executed when an invalid index is referenced. Negative values of index count from the end of the array.
+
+a = [ 11, 22, 33, 44 ]
+a.fetch(1)               #=> 22
+a.fetch(-1)              #=> 44
+a.fetch(4, 'cat')        #=> "cat"
+a.fetch(100) { |i| puts "#{i} is out of bounds" }
+                         #=> "100 is out of bounds"
+
+
+Fill
+
+A start of nil is equivalent to zero.
+
+A length of nil is equivalent to the length of the array.
+
+The last three forms fill the array with the value of the given block, which is passed the absolute index of each element to be filled.
+
+Negative values of start count from the end of the array, where -1 is the last element.
+
+a = [ "a", "b", "c", "d" ]
+a.fill("x")              #=> ["x", "x", "x", "x"]
+a.fill("z", 2, 2)        #=> ["x", "x", "z", "z"]
+a.fill("y", 0..1)        #=> ["y", "y", "z", "z"]
+a.fill { |i| i*i }       #=> [0, 1, 4, 9]
+a.fill(-2) { |i| i*i*i } #=> [0, 1, 8, 27]
+
+
+Hash
+my_hash = { "name" => "Annie", "coins" => 5, "password" => "take my money", "favorite foods" => ["apples", "salami", "Ritter Sport candy bars"] }
+
+What does the following return?
+
+my_hash["name"]
+
+How about this?
+
+my_hash["coins"]
+
+Hashes are useful when you need to be able to find something by a particular attribute.
