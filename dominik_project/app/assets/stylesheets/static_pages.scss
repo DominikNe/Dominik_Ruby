@@ -1,0 +1,23 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: black;
+}
+.nav ul{
+  float: right;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.nav ul li{
+  display: inline;
+}
+.nav ul li {
+  color: #fff;
+  padding: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.top{
+	margin-top:70px;
+}
